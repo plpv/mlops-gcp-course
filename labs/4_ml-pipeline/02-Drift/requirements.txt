@@ -1,0 +1,29 @@
+# Lab 4: Data/Model Drift Monitoring
+# Core ML libraries
+numpy>=1.23.0,<2.0.0
+pandas>=1.5.0,<2.0.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.20.0
+
+# Drift monitoring and analysis
+argilla>=1.20.0
+datasets>=2.14.0
+transformers>=4.35.0
+
+# LLM tools
+ollama>=0.1.0
+
+# Topic modeling and NLP
+bertopic>=0.16.0
+textdescriptives>=2.7.0
+spacy>=3.7.0
+nltk>=3.8.0
+
+# Google Cloud Platform
+google-cloud-aiplatform>=1.38.0
+google-cloud-storage>=2.13.0

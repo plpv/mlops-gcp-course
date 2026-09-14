@@ -1,3 +1,18 @@
-mlflow == 2.20.3
-seaborn == 0.13.2
-optuna == 4.2.1
+# Lab 1: MLflow - Experiment Tracking
+# Core ML libraries
+numpy>=1.23.0,<2.0.0
+pandas>=1.5.0,<2.0.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.20.0
+
+# MLflow and optimization
+mlflow>=2.20.0
+optuna>=4.0.0
+
+# Data format support
+pyarrow>=10.0.0

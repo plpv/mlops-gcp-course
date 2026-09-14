@@ -1,11 +1,11 @@
 # MLOps introductory course on Google Cloud Platform (GCP)
 
-This course is being taught at as part of [Master Year 2 Data Science Supaero](https://supaerodatascience.github.io/index.html)
+This course is taught as part of the [Master Year 2 Data Science Supaero](https://supaerodatascience.github.io/index.html).
 
 
-<img src=https://www.isae-supaero.fr/local/cache-vignettes/L190xH102/siteon0-e5814.png width="150">
+<img src="https://www.isae-supaero.fr/wp-content/uploads/2025/03/logo.svg" width="150">
 
-This course is designed to be held during 5 classes lasting 3 hours each. This course will span over 15 hours.
+The course is designed around 5 classes of 3 hours each, for a total of 15 hours.
 
 ## A bit of context
 
@@ -13,35 +13,91 @@ MLOps is a rapidly evolving field that combines machine learning and software en
 
 ## Course syllabus
 
-The course covers the basics of MLOps, applied on Google Cloud Platform (GCP).
+The course covers the fundamentals of MLOps, applied on Google Cloud Platform (GCP).
 
 ### Lecture slides
 
-1. Mlflow : tracking training experiments, evaluation, model registry
-2. FlowML on Vertex AI (GCP)
-3. deploy a model behind an endpoint. Batch and streaming inference. Scale with inference demand. A/B testing
-4. Monitor model in production : data drift, model drift, continuous training (CT)
-5. (GenAI) : hands-on with Google Vertex AI. Deploying a RAG chatbot on Cloud.
+- What is MLOps?
+- MLflow framework
+- Vertex AI on GCP
+- Deploying a model behind an endpoint on GCP — batch and streaming inference
+- ML pipelines on GCP
+- Deploying a RAG (Retrieval-Augmented Generation) chatbot on Vertex AI
 
-### Lab notebooks
+### Classes
 
-The Jupyter notebooks for the labs can be found in the `labs` folder of
-this Git repository.
+Lab notebooks can be found in the `labs` folder of this repository.
 
-#### Requirements
+**Class 1**
+- What is MLOps?
+- Introduction to the MLflow framework
+- MLflow lab on local computers
 
-The labs are configured to run with python 3.11.0
+**Class 2**
+- Introduction to GCP AI services (Vertex AI)
+- Vertex AI hands-on lab
+
+**Class 3**
+- Deploying a model behind a Vertex AI endpoint
+- Batch and streaming inference
+- Scaling and A/B testing
+
+**Class 4**
+- ML pipelines on GCP
+
+**Class 5**
+- What is a RAG?
+- Implementing a RAG on Vertex AI
+
+## Installation
+
+### Prerequisites
+
+- Python
+- Git
+- GCP Account with credits
+
+### Step 1: Clone the repository
+```bash
+git clone <repository-url>
+cd MLOps-Introductory-Course-on-GCP
+```
+
+### Step 2: Installation (For Lab 1)
+
+Navigate to the lab folder and create a virtual environment:
+```bash
+# macOS/Linux
+cd labs/1_mlflow
+python3.10 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+```bash
+# Windows — try these commands in order until one works
+cd labs/1_mlflow
+
+# Option 1: Python Launcher
+py -3.10 -m venv venv
+
+# Option 2: Direct Python command
+python -m venv venv
+
+# Option 3: Full path (adjust to your Python installation)
+C:\Python310\python.exe -m venv venv
+
+# Activate and install
+venv\Scripts\activate
+python --version  # Should show Python 3.10.x
+pip install -r requirements.txt
+```
 
 ### Evaluation
 
-Hands-on implementation on notebooks that will be assessed by the teacher.
+Hands-on implementation through notebooks, evaluated by the instructor.
   
 ## Acknowledgments
 
-This lecture was built by Headmind Partners AI and being taught by Pierre-Louis Perez.
+These are the lab materials for the MLOps course I teach as part of the AI specialization at ISAE-SUPAERO, developed in collaboration with HeadMind Partners AI. Thanks to ISAE-SUPAERO for their trust and support, especially Emmanuel Rachelson and Dennis Wilson.
 
-We thank the teachers of Supaero for their confidence, especially Emmanuel Rachelson and Dennis Wilson.
-
-## License
-
-All the code in this repository belongs to <img src=https://join.headmind.com/wp-content/uploads/2021/12/Logo-HeadMind-Partners-PNG-BLEU.png width="170">
+Shared here for educational purposes.
